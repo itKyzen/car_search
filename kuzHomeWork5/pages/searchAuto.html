@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>luxAuto</title>
+	<link rel="stylesheet" href="../styleCss/style.css">
+</head>
+<body>
+<div>
+	<ul>
+		<li><a href="../index.html">Главная</a></li>
+		<li><a href="../pages/registration.html">Регистрация</a></li>
+		<li><a href="../pages/login.html">Вход</a></li>
+	</ul>
+</div>
+		<div class="clearfix"></div>
+		<form action="https://fom.in.ua/echo" method="get">
+		<div class='container'>
+			<div class="container-title">
+				<h1>
+					Поиск авто в базе
+				</h1>
+				<div class="container-sub">
+					<p>
+						укажите параметры поиска:
+					</p>
+				</div>
+			</div>
+			<div class="container__search">
+				<div>
+					<div>
+						<label for="cab">Выберите кузов:</label>
+						<select name="cab" id="cab">
+							<option disabled>Выберите кузов</option>
+							<option value="Пикап">Пикап</option>
+							<option value="Седан">Седан</option>
+						</select>
+					</div>
+					<div>
+						<label for="mark">Выберите марку:</label>
+						<select name="mark" id="mark">
+							<option disabled>Выберите марку</option>
+							<option value="BMW">BMW</option>
+							<option value="Honda">Honda</option>
+						</select>
+					</div>
+				</div>
+				<div>
+					<p>
+						Цена
+					</p>
+					<label>
+						от <input name="minPrice" type="text" >
+					</label>
+					<label>
+						до <input name="maxPrice" type="text">
+					</label>
+				</div>
+				<div>
+					<div>
+						<p>
+							Год
+						</p>
+					</div>
+				</div>
+				<div>
+					<div>
+						<p>
+							Состояние
+						</p>
+					</div>
+					<label>
+						<input type="checkbox" name="condition" value="crash">
+						Битая
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" name="condition" value="inCredit">
+						В кредит
+					</label>
+					<label>
+						<input type="checkbox" name="condition" value="inUsed">
+						Б/У
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" name="condition" value="clearance">
+						Новая
+					</label>
+				</div>
+				<div>
+					<p>
+						Тип топлива
+					</p>
+					<label>
+						<input type="radio" name="fuel" value="gasoline">
+						Бензин
+					</label>
+					<label>
+						<input type="radio" name="fuel" value="diesel">
+						Дизель
+					</label>
+					<label>
+						<input type="radio" name="fuel" value="gib-rid">
+						Гибрид
+					</label>
+				</div>
+				<div>
+					<p>
+						Тип коробки передач
+					</p>
+					<label>
+						<input type="radio" name="transmission" value="mechanic">
+						Ручная
+					</label>
+					<label>
+						<input type="radio" name="transmission" value="auto">
+						Автомат
+					</label>
+					<label>
+						<input type="radio" name="transmission" value="robot">
+						Робот/Вариатор
+					</label>
+				</div>
+				<div>
+					<p>
+						Выберите цвет
+					</p>
+					<label >
+						<input type="text"  name="color" placeholder="Ведите цвет">
+					</label>
+					<p>
+						Дополнительно:
+					</p>
+					<label>
+						<input type="checkbox" name="options" value="window">
+						Люк
+					</label>
+					<label>
+						<input type="checkbox" name="options" value="salon">
+						Кожанный салон
+					</label>
+					<label>
+						<input type="checkbox" name="options" value="mileage">
+						Без пробега
+					</label>
+					<label>
+						<input type="checkbox" name="options" value="condition">
+						Не подлежит восстановлению
+					</label>
+				</div>
+				<div>
+					<label>
+						<button type="submit" class="btn">Поиск</button>
+					</label>
+				</div>
+			</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

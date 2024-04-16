@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration</title>
+	<link rel="stylesheet" href="../styleCss/style.css">
+</head>
+<body>
+<div>
+	<ul>
+		<li><a href="../index.html">Главная</a></li>
+		<li><a href="../pages/searchAuto.html">Поиск</a></li>
+		<li><a href="../pages/login.html">Вход</a></li>
+	</ul>
+</div>
+	<div>
+		<form action="https://fom.in.ua/echo" method="get">
+			<div class="container" >
+				<div class="container-title">
+					<h1>Регистрация</h1>
+				</div>
+				<div class="container-sub">
+					<p>Для регистрации введите имейл и пароль</p>
+				</div>
+				<label>
+					<b>Имейл</b>
+					<input type="text" placeholder="Введите имейл" name="email" required/>
+				</label>
+				<label>
+					<b>Пароль</b>
+					<input type="password" placeholder="Введите пароль" name="psw" required>
+				</label>
+				<label>
+					<b>Повторите пароль</b>
+					<input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+				</label>
+				<div class="container-sub">
+					<p>Если вы хотите продолжить без регистрации нажмите <a href="searchAuto.html"> здесь</a>.</p>
+				</div>
+				<button type="submit" class="btn">Регистрация</button>
+			</div>
+			<div class="container signin" >
+				<p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

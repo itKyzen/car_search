@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="../styleCss/style.css">
+</head>
+<body>
+<div>
+	<ul>
+		<li><a href="../index.html">Главная</a></li>
+		<li><a href="../pages/registration.html">Регистрация</a></li>
+		<li><a href="../pages/searchAuto.html">Поиск</a></li>
+	</ul>
+</div>
+<div>
+	<form action="https://fom.in.ua/echo" method="get">
+		<div class="container">
+			<div class="container-title">
+				<h1>Вход</h1>
+			</div>
+			<div class="container-sub">
+				<p>Для входа введите имейл и пароль</p>
+			</div>
+			<label>
+				<b>Имейл</b>
+				<input type="text" placeholder="Введите имейл" name="email" required/>
+			</label>
+			<label>
+				<b>Пароль</b>
+				<input type="password" placeholder="Введите пароль" name="psw" required>
+			</label>
+			<div class="container-sub">
+				<p>Если вы хотите продолжить без входа нажмите<a href="searchAuto.html"> здесь</a>.</p>
+			</div>
+			<button type="submit" class="btn">Вход</button>
+		</div>
+		<div class="container signin">
+			<p>Нет аккаунта? <a href="registration.html">Регистрация</a>.</p>
+		</div>
+	</form>
+</div>
+</body>
+</html>
